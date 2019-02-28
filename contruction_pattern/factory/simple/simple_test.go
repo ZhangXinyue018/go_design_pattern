@@ -2,6 +2,7 @@ package simple
 
 import (
 	"fmt"
+	"go_design_pattern/contruction_pattern/factory"
 	"testing"
 )
 
@@ -14,8 +15,8 @@ func TestGenAnimal(t *testing.T) {
 		args args
 		want interface{}
 	}{
-		{"test1", args{"dog"}, &Dog{}},
-		{"test2", args{"cat"}, &Cat{}},
+		{"test1", args{"dog"}, &factory.Dog{}},
+		{"test2", args{"cat"}, &factory.Cat{}},
 		{"test3", args{"not exist"}, nil},
 	}
 	for _, tt := range tests {

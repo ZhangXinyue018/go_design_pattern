@@ -1,11 +1,13 @@
 package simple
 
-func AnimalFactory(animalType string) Animal {
+import "go_design_pattern/contruction_pattern/factory"
+
+func AnimalFactory(animalType string) factory.Animal {
 	switch animalType {
 	case "dog":
-		return &Dog{Name: "doggy"}
+		return &factory.Dog{Name: "doggy"}
 	case "cat":
-		return &Cat{Name: "catty"}
+		return &factory.Cat{Name: "catty"}
 	default:
 		return nil
 	}

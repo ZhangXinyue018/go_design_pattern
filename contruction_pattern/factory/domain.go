@@ -1,4 +1,4 @@
-package simple
+package factory
 
 import "fmt"
 
@@ -12,7 +12,7 @@ type Dog struct {
 }
 
 func (dog *Dog) Run() {
-	fmt.Println("dog is running!!!")
+	fmt.Printf("dog %s is running!!! \n", dog.Name)
 }
 
 type Cat struct {
@@ -21,5 +21,5 @@ type Cat struct {
 }
 
 func (cat *Cat) Run() {
-	fmt.Println("cat is running!!!")
+	fmt.Printf("cat %s is running!!!\n", cat.Name)
 }
