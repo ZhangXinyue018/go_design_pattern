@@ -1,4 +1,4 @@
-package method
+package abstract
 
 import (
 	"fmt"
@@ -37,6 +37,7 @@ func (pizza *SouthGreekPizza) Prepare() {
 	fmt.Println("Prepare south yogurt")
 }
 
+// abstract layer
 type Factory interface {
 	GeneratePizza(pizzaType string) domain.Pizza
 }
