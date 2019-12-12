@@ -2,10 +2,6 @@ package domain
 
 import "fmt"
 
-type PizzaBase1 interface {
-	Prepare()
-}
-
 type Pizza interface {
 	Prepare()
 	Bake()
