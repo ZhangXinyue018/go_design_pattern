@@ -1,6 +1,6 @@
 package simple
 
-import "go_design_pattern/contruction_pattern/factory"
+import "github.com/go_design_pattern/old/contruction_pattern/factory"
 
 func AnimalFactory(animalType string) factory.Animal {
 	switch animalType {
