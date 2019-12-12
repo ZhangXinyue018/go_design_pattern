@@ -1,13 +1,12 @@
-package builder
+package standard
 
 import (
 	"fmt"
-	"github.com/go_design_pattern/creational/builder/domain"
 	"testing"
 )
 
 func TestClient(t *testing.T) {
-	director := Director{Builder: &domain.CommonHouseBuilder{}}
+	director := Director{Builder: &CommonHouseBuilder{}}
 	house1 := director.Build()
 	house2 := director.Build()
 	fmt.Printf("house1 of %v and addr %p\n", *house1, house1)

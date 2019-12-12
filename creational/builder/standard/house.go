@@ -1,4 +1,4 @@
-package domain
+package standard
 
 type House struct {
 	Basic string
